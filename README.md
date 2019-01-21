@@ -76,7 +76,7 @@ Run cova with the following options (put after ``java -jar cova.jar``):
 
 (2) **Standalone**:
 
-You can run COVA in standalone mode with the option ``s``. In this mode a constraint map will be computed. If you have the java source code of your application, you can get the constraint map printed next to each line of code in HTML sites with the option ``òutput_html``. 
+You can run COVA in standalone mode with the option ``s``. In this mode a constraint map will be computed. If you have the java source code of your application, you can get the constraint map printed next to each line of code in HTML sites with the option `-output_html``. 
 
 Run cova with the following options:
 
