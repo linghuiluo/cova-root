@@ -7,7 +7,7 @@ We respect the double blind review process and removed information such as autho
 - The tests for running constraintBench for COVA can be found in directory `cova/src/test/java/constraintBenchTestSuite.`
 
 ## How to Build COVA?
-COVA is implemented as a maven project. However, since some dependencies COVA uses do not have public maven repositories, you need to follow the steps below:
+COVA is implemented as a maven project. However, since some dependencies COVA uses do not have public maven repositories, to build COVA you need to follow the steps below:
 
 ## 1. Bind Z3 Library
 COVA uses Z3 for STM-Solving and you need at first to bind Z3 for running the tool or use a [docker image](/cova/config/Dockerfile.txt) (tested on Linux). 
