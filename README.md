@@ -44,7 +44,7 @@ Value: `$REPO_LOCATION/cova/localLibs/z3-4.5.0-x64-ubuntu/bin`
 You need to add Z3 to `DYLD_LIBRARY_PATH` (untested)
 
 ## 2.1 Build The Tool With Maven
-- Install required local dependencies into your local maven repository with the script ``install_local_libs.*`` in `$REPO_LOCATION/cova/localLibs` (Windows using `install_local_libs.bat` or Linux using `install_local_libs.sh`). 
+- Install required local dependencies into your local maven repository with the script ``install_local_libs.*`` in `$REPO_LOCATION/cova/localLibs` (Windows using [`install_local_libs.bat`](cova/localLibs/install_local_libs.bat) or Linux using [`install_local_libs.sh`](cova/localLibs/install_local_libs.sh)). 
 - run `mvn install` to build the tool and run all tests.
 - If you want to skip tests just run `mvn -DskipTests install`
 
@@ -76,7 +76,7 @@ Run cova with the following options (put after ``java -jar cova.jar``):
 
 (2) **Standalone**:
 
-You can run COVA in standalone mode with the option ``s``. In this mode a constraint map will be computed. If you have the java source code of your application, you can get the constraint map printed next to each line of code in HTML sites with the option `-output_html``. 
+You can run COVA in standalone mode with the option ``s``. In this mode a constraint map will be computed. If you have the java source code of your application, you can get the constraint map printed next to each line of code in HTML sites with the option `-output_html`. 
 
 Run cova with the following options:
 
