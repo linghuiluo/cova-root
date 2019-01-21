@@ -44,12 +44,12 @@ Value: `$REPO_LOCATION/cova/localLibs/z3-4.5.0-x64-ubuntu/bin`
 You need to add Z3 to `DYLD_LIBRARY_PATH` (untested)
 
 ## 2.1 Build The Tool With Maven
-- Install required local dependencies into your local maven repository with the script ``install_local_libs.*`` in ''$REPO_LOCATION/cova/localLibs''(Windows using install_local_libs.bat) or Linux using install_local_libs.sh). 
+- Install required local dependencies into your local maven repository with the script ``install_local_libs.*`` in `$REPO_LOCATION/cova/localLibs` (Windows using `install_local_libs.bat` or Linux using `install_local_libs.sh`). 
 - run `mvn install` to build the tool and run all tests.
 - If you want to skip tests just run `mvn -DskipTests install`
 
 ## 2.2 Build The Tool with Eclipse
-- Install required local dependencies into your local maven repository with the script ``install_local_libs.*`` in ''$REPO_LOCATION/cova/localLibs''(Windows using install_local_libs.bat) or Linux using install_local_libs.sh). 
+- Install required local dependencies into your local maven repository with the script ``install_local_libs.*`` in `$REPO_LOCATION/cova/localLibs` (Windows using `install_local_libs.bat` or Linux using `install_local_libs.sh`). 
 - Simply import the project as maven project. Maven should take care of all reqired dependences.
 > Eclipse> File> Import > Maven > Existing Maven Projects > *Enter the path to your local repository*  > Finish
 
