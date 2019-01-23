@@ -68,9 +68,9 @@ Run cova with the following options (put after ``java -jar cova.jar``):
 ``-android -config <config files path> -p <android platform path> -apk <apk file>``
 
    for testing this you can find: 
-   - config files:``$REPO_LOCATION/cova/config``
-   - android platforms (API 26-27): ``$REPO_LOCATION/cova/src/test/resources/androidPlatforms``
-   - an example apk:``$REPO_LOCATION/constraintBench/androidApps/apks/Callbacks1.apk``
+   - config files:[``$REPO_LOCATION/cova/config``](cova/config)
+   - android platforms (API 26-27): [``$REPO_LOCATION/cova/src/test/resources/androidPlatforms``](cova/src/test/resources/androidPlatforms)
+   - an example apk:[``$REPO_LOCATION/constraintBench/androidApps/apks/Callbacks1.apk``](constraintBench/androidApps/apks/)
 
    The results are in JSON files located in ``$WORKING_DIRECTORY/covaOutput/jsonOutput``
 
