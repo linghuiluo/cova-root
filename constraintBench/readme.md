@@ -1,4 +1,4 @@
-This is the micro benchmark used for evaluating COVA. Most of the test cases can be found in [src/main/java/constraintBench/test](src/main/java/constraintBench/test), the rest are in [androidApps](androidApps) and [javaApps](javaApps).
+This is the micro benchmark used for evaluating COVA. Most of the test programs can be found in [src/main/java/constraintBench/test](src/main/java/constraintBench/test), the rest are in [androidApps](androidApps) and [javaApps](javaApps).
 
 constraint-APIs used for test cases:
 
