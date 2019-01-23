@@ -31,7 +31,7 @@ Currently, the repository only inclues Z3 for Ubuntu and Debian-8.5 64bit.
 
 - **Userwide via OS**:  
 Add the **LD_LIBRARY_PATH** Variable to .profile in your home directory and load that file to your current Environment:  
-`echo "export LD_LIBRARY_PATH=\"$LD_LIBRARY_PATH:$REPO_LOCATION/cova/localLibs/z3-4.5.0-x64-ubuntu/bin"" >> ~/.profile
+`echo "export LD_LIBRARY_PATH=/"$LD_LIBRARY_PATH:$REPO_LOCATION/cova/localLibs/z3-4.5.0-x64-ubuntu/bin"" >> ~/.profile
 source ~/.profile`
 
 - **Projectwide in Eclipse**:  
@@ -68,11 +68,11 @@ Run cova with the following options (put after ``java -jar cova.jar``):
 ``-android -config <config files path> -p <android platform path> -apk <apk file>``
 
    for testing this you can find: 
-   - config files:``$REPO_LOCATION\cova\config``
-   - android platforms (API 26-27): ``$REPO_LOCATION\cova\src\test\resources\androidPlatforms``
-   - an example apk:``$REPO_LOCATION\constraintBench\androidApps\apks\Callbacks1.apk``
+   - config files:``$REPO_LOCATION/cova/config``
+   - android platforms (API 26-27): ``$REPO_LOCATION/cova/src/test/resources/androidPlatforms``
+   - an example apk:``$REPO_LOCATION/constraintBench/androidApps/apks/Callbacks1.apk``
 
-   The results are in JSON files located in ``$WORKING_DIRECTORY\covaOutput\jsonOutput``
+   The results are in JSON files located in ``$WORKING_DIRECTORY/covaOutput/jsonOutput``
 
 (2) **Standalone**:
 
@@ -83,11 +83,11 @@ Run cova with the following options:
 ``-android -config <config files path> -p <android platform path> -apk <apk file> -s "true" -output_html <source code path>``
 
    for testing this you can find: 
-   - config files:``$REPO_LOCATION\cova\config``
-   - android platforms (API 26-27): ``$REPO_LOCATION\cova\src\test\resources\androidPlatforms``
-   - an example apk:``$REPO_LOCATION\constraintBench\androidApps\apks\Callbacks1.apk``
-   - source code of this apk: ``$REPO_LOCATION\constraintBench\androidApps\sourceCode\Callbacks1``
+   - config files:``$REPO_LOCATION/cova/config``
+   - android platforms (API 26-27): ``$REPO_LOCATION/cova/src/test/resources/androidPlatforms``
+   - an example apk:``$REPO_LOCATION/constraintBench/androidApps/apks/Callbacks1.apk``
+   - source code of this apk: ``$REPO_LOCATION/constraintBench/androidApps/sourceCode/Callbacks1``
 
-   The results are in HTML files located in ``$WORKING_DIRECTORY\covaOutput\htmlOutput``
+   The results are in HTML files located in ``$WORKING_DIRECTORY/covaOutput/htmlOutput``
    
 
