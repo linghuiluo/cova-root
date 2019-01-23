@@ -3,7 +3,7 @@ We respect the double blind review process and removed information such as autho
 
 - The directory [`cova`](cova/) contains the source code of COVA.
 - The directory [`constraintBench`](constraintBench/) contains the micro-benchmark used for COVA.
-- The lists of constraint-APIs can be found in directory [`cova/config/`](cova/config/): click to see [Configuration-related APIs](cova/config/Configuration_APIs.txt), [UICallback-related APIs](cova/config/UICallback_APIs.txt) and [IO-related APIs](cova/config/IO_APIs.txt)
+- The lists of constraint-APIs can be found in directory [`cova/config/`](cova/config/): click to see [UICallback-related APIs](cova/config/UICallback_APIs.txt), [Configuration-related APIs](cova/config/Configuration_APIs.txt) and [IO-related APIs](cova/config/IO_APIs.txt)
 - The tests for running constraintBench for COVA can be found in directory [`cova/src/test/java/constraintBenchTestSuite/`](cova/src/test/java/constraintBenchTestSuite)
 
 ## How to Build COVA?
