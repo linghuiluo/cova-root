@@ -17,7 +17,7 @@ Currently, the repository only includes Z3 for Windows 64bit.
 There are two choices for you to bind z3:
 
 - **Userwide via OS**: 
-Add `$REPO_LOCATION/cova/localLibs/z3-4.5.0-x64-win/bin` to the system variable `PATH` of your operating system ([How do I set or change the PATH system variable?](https://www.java.com/en/download/help/path.xml)). You may need to retart your OS. 
+Add `$REPO_LOCATION/cova/localLibs/z3-4.5.0-x64-win/bin` to the system variable `PATH` of your operating system ([How do I set or change the PATH system variable?](https://www.java.com/en/download/help/path.xml)). You may need to restart your OS. 
 
 - **Projectwide in Eclipse**: 
 After importing COVA as maven project, you can specify the environment variable: 
@@ -27,25 +27,30 @@ Value: `$REPO_LOCATION/cova/localLibs/z3-4.5.0-x64-win/bin`
 
 
 ### - Linux
-Currently, the repository only inclues Z3 for Ubuntu and Debian-8.5 64bit.
+Currently, the repository only includes Z3 for Ubuntu and Debian-8.5 64bit.
 
 - **Userwide via OS**:  
-Add the **LD_LIBRARY_PATH** Variable to .profile in your home directory and load that file to your current Environment:  
-`echo "export LD_LIBRARY_PATH=/"$LD_LIBRARY_PATH:$REPO_LOCATION/cova/localLibs/z3-4.5.0-x64-ubuntu/bin"" >> ~/.profile
-source ~/.profile`
+Add the **LD_LIBRARY_PATH** Variable to ~/.profile( or ~/.xprofile) and load that file to your current Environment: 
+cd into Repository:
+REPO_LOCATION=$("pwd") && echo "export LD_LIBRARY_PATH=\"\$LD_LIBRARY_PATH:$REPO_LOCATION/cova/localLibs/z3-4.5.0-x64-ubuntu/bin\"" >> ~/.profile;
 
-- **Projectwide in Eclipse**:  
-After importing COVA as maven project, you can specify the environment variable:
+
+- **Projectwide in Eclipse for Ubuntu64**:  
+After importing COVA as maven project, you can specify the environment variable (change $REPO_LOCATION according to the location of the repository):
 > Eclipse > Run > Run Configurations > Environment > New  
 Name: `LD_LIBRARY_PATH`  
 Value: `$REPO_LOCATION/cova/localLibs/z3-4.5.0-x64-ubuntu/bin` 
+
+- **Projectwide in IntelliJ**
+Set [java.library.path] in the VM options input field in the Run/Debug Configurations dialog.
+`$REPO_LOCATION/cova/localLibs/z3-4.5.0-x64-ubuntu/bin`
 
 ### - OSX
 You need to add Z3 to `DYLD_LIBRARY_PATH` (untested)
 
 ## 2.1 Build The Tool With Maven
 - Install required local dependencies into your local maven repository with the script ``install_local_libs.*`` in `$REPO_LOCATION/cova/localLibs` (Windows using [`install_local_libs.bat`](cova/localLibs/install_local_libs.bat) or Linux using [`install_local_libs.sh`](cova/localLibs/install_local_libs.sh)). 
-- run `mvn install` to build the tool and run all tests.
+- Return to project root to run `mvn install` to build the tool and run all tests.
 - If you want to skip tests just run `mvn -DskipTests install`
 
 ## 2.2 Build The Tool with Eclipse
@@ -55,7 +60,7 @@ You need to add Z3 to `DYLD_LIBRARY_PATH` (untested)
 
 ## 3. Running The Command-Line Tool 
 - Make sure you have JAVA 8 installed and bound Z3. 
-- Run the executable jar with JAVA: ``java -jar cova.jar`` .
+- Run the executable jar (found in [$REPO_LOCATION/cova/targets/] with JAVA: ``java -jar cova.jar`` .
 - You can run COVA with the option ``-android`` to get all options for analyzing an Android application or with the option ``-java`` for normal Java application.
 - Here is an example explained step by step:
 
