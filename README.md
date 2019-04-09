@@ -1,4 +1,4 @@
-# COVA - Constraint Analysis with VASCO
+# COVA - Constraint Analysis with VASCO[![Build Status](https://travis-ci.com/covaanalyst/cova-root.svg?branch=master)](https://travis-ci.com/covaanalyst/cova-root)
 We respect the double blind review process and removed information such as author and institution names in source code to maintain the author anonymity. 
 
 - The directory [`cova`](cova/) contains the source code of COVA.
