@@ -30,9 +30,9 @@ Value: `$REPO_LOCATION/cova/localLibs/z3-4.5.0-x64-win/bin`
 Currently, the repository only includes Z3 for Ubuntu and Debian-8.5 64bit.
 
 - **Userwide via OS**:  
-Add the **LD_LIBRARY_PATH** Variable to ~/.profile( or ~/.xprofile) and load that file to your current Environment: 
-cd into Repository:
-REPO_LOCATION=$("pwd") && echo "export LD_LIBRARY_PATH=\"\$LD_LIBRARY_PATH:$REPO_LOCATION/cova/localLibs/z3-4.5.0-x64-ubuntu/bin\"" >> ~/.profile;
+Add the **LD_LIBRARY_PATH** Variable to ~/.profile( or ~/.xprofile): cd into Repository:
+`REPO_LOCATION=$("pwd") && echo "export LD_LIBRARY_PATH=\"\$LD_LIBRARY_PATH:$REPO_LOCATION/cova/localLibs/z3-4.5.0-x64-ubuntu/bin\"" >> ~/.profile;`
+Load the edited file to your current environment (e.g. `source ~/.profile` or restart your user session). 
 
 
 - **Projectwide in Eclipse for Ubuntu64**:  
