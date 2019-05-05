@@ -2,7 +2,7 @@
 We respect the double blind review process and removed information such as author and institution names in source code to maintain the author anonymity. 
 
 - The Android apps we evaluated can be found on kaggle.com ([click to download](https://www.kaggle.com/covaanalyst1/cova-dataset)) 
-- The long version of the paper can be found here ([click to download]())
+- The long version of the paper can be found here ([click to download](https://github.com/covaanalyst/cova-root/blob/master/longversion.pdf))
 - The directory [`cova`](cova/) contains the source code of COVA.
 - The directory [`constraintBench`](constraintBench/) contains the micro-benchmark used for COVA.
 - The lists of constraint-APIs can be found in directory [`cova/config/`](cova/config/): click to see [UICallback-related APIs](cova/config/UICallback_APIs.txt), [Configuration-related APIs](cova/config/Configuration_APIs.txt) and [IO-related APIs](cova/config/IO_APIs.txt)
